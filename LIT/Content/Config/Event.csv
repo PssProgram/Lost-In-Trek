@@ -1,0 +1,2 @@
+﻿EventID,EventType,Name,MissionID,MissionSetp,Planet,ScriptName,GoToMissionSetp
+10001200,2,测试事件,10001,0,0,TestScript,1

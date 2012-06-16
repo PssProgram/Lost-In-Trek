@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LIT\UI\PlanetMenu.cs">
+    <Files>
+      <File FileName="LIT\UI\PlanetMenu.cs" Line="71" Column="5" />
+      <File FileName="LIT\Game.cs" Line="32" Column="50" />
+      <File FileName="LIT\Scene\MainMenu.cs" Line="17" Column="25" />
+      <File FileName="LIT\Scene\PlanetScene.cs" Line="67" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Pss\Documents\LostInTrek-SVN\LIT\UI\PlanetMenu.cs" line="102" />
+      <Breakpoint file="C:\Users\Pss\Documents\LostInTrek-SVN\LIT\UI\PlanetMenu.cs" line="127" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

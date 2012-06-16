@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameBace", "GameBace\GameBace.csproj", "{5A65CC9A-0A73-4DD1-8B09-6C53A33EC1F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIT", "LIT\LIT.csproj", "{ECC08544-21EC-44E8-A745-2321A4B103BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A65CC9A-0A73-4DD1-8B09-6C53A33EC1F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A65CC9A-0A73-4DD1-8B09-6C53A33EC1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A65CC9A-0A73-4DD1-8B09-6C53A33EC1F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A65CC9A-0A73-4DD1-8B09-6C53A33EC1F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC08544-21EC-44E8-A745-2321A4B103BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC08544-21EC-44E8-A745-2321A4B103BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC08544-21EC-44E8-A745-2321A4B103BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC08544-21EC-44E8-A745-2321A4B103BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = LIT\LIT.csproj
+	EndGlobalSection
+EndGlobal

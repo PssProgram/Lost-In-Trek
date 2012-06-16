@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ECC08544-21EC-44E8-A745-2321A4B103BC}</ProjectGuid>
+    <ProjectTypeGuids>{69878862-DA7D-4DC6-B0A1-50D8FAB4242F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LostInTrek</RootNamespace>
+    <AssemblyName>LIT</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Sce.Pss.Core" />
+    <Reference Include="Sce.Pss.HighLevel.GameEngine2D" />
+    <Reference Include="Sce.Pss.HighLevel.UI" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Scene\MainMenu.cs" />
+    <Compile Include="Scene\TestScene.cs" />
+    <Compile Include="Scene\PlanetScene.cs" />
+    <Compile Include="UI\PlanetMenu.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ShaderProgram Include="shaders\Simple.fcg" />
+    <ShaderProgram Include="shaders\Simple.vcg" />
+    <ShaderProgram Include="shaders\Texture.fcg" />
+    <ShaderProgram Include="shaders\Texture.vcg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Pss.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\GameBace\GameBace.csproj">
+      <Project>{5A65CC9A-0A73-4DD1-8B09-6C53A33EC1F0}</Project>
+      <Name>GameBace</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Pic\MainMenu\" />
+    <Folder Include="Content\Pic\AVG\" />
+    <Folder Include="Content\Font\" />
+    <Folder Include="Content\Script\" />
+    <Folder Include="Scene\" />
+    <Folder Include="Content\Pic\BG\" />
+    <Folder Include="Content\Pic\Battles\" />
+    <Folder Include="Content\Config\" />
+    <Folder Include="Content\Pic\PlanetMenu\" />
+    <Folder Include="UI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Pic\MainMenu\Menu_BG.png" />
+    <Content Include="Content\Pic\MainMenu\Menu_Button1.png" />
+    <Content Include="Content\Pic\MainMenu\Menu_Button2.png" />
+    <Content Include="Content\Pic\MainMenu\Menu_Button3.png" />
+    <Content Include="Content\Pic\MainMenu\Menu_Title.png" />
+    <Content Include="Content\Pic\MainMenu\Menu_Title2.png" />
+    <Content Include="Content\Pic\AVG\TextBox.png" />
+    <Content Include="Content\Font\GameFont.ttf" />
+    <Content Include="Content\Text\AVGText.csv" />
+    <Content Include="Content\Script\TestScript.txt" />
+    <Content Include="Content\Pic\BG\NewTokyo.png" />
+    <Content Include="Content\Pic\BG\Default.png" />
+    <Content Include="Content\Pic\Battles\background.png" />
+    <Content Include="Content\Pic\Battles\BoundaryWarning.png" />
+    <Content Include="Content\Pic\Battles\star.png" />
+    <Content Include="Content\Pic\Battles\test.png" />
+    <Content Include="Content\Pic\Battles\testship.png" />
+    <Content Include="Content\Pic\Battles\testwingman.png" />
+    <Content Include="Content\Config\Planet.csv" />
+    <Content Include="Content\Config\Event.csv" />
+    <Content Include="Content\Pic\Battles\primitive.png" />
+    <Content Include="Content\Config\Mission.csv" />
+    <Content Include="Content\Pic\PlanetMenu\Port_Button.png" />
+    <Content Include="Content\Pic\PlanetMenu\Menu_BG.png" />
+    <Content Include="Content\Pic\PlanetMenu\Government_Button.png" />
+    <Content Include="Content\Pic\PlanetMenu\Shipyard_Button.png" />
+    <Content Include="Content\Pic\PlanetMenu\Market_Button.png" />
+    <Content Include="Content\Pic\PlanetMenu\Bar_Button.png" />
+  </ItemGroup>
+</Project>

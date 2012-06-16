@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A65CC9A-0A73-4DD1-8B09-6C53A33EC1F0}</ProjectGuid>
+    <ProjectTypeGuids>{69878862-DA7D-4DC6-B0A1-50D8FAB4242F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PSVX.Base</RootNamespace>
+    <AssemblyName>GameBace</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Sce.Pss.Core" />
+    <Reference Include="Sce.Pss.HighLevel.GameEngine2D" />
+    <Reference Include="Sce.Pss.HighLevel.UI" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Pss.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Sound\SoundManager.cs" />
+    <Compile Include="Action\Animation.cs" />
+    <Compile Include="Object\SptireX.cs" />
+    <Compile Include="Helper\Ticker.cs" />
+    <Compile Include="Object\LiveObject.cs" />
+    <Compile Include="GameBace\Layer.cs" />
+    <Compile Include="Object\GameObject.cs" />
+    <Compile Include="Contact\OBB.cs" />
+    <Compile Include="Contact\Contacter.cs" />
+    <Compile Include="GameBace\GameScene.cs" />
+    <Compile Include="Debug\Debug.cs" />
+    <Compile Include="GameBace\GameBase.cs" />
+    <Compile Include="Input\TouchManager.cs" />
+    <Compile Include="GameBace\GameUI.cs" />
+    <Compile Include="AVGMode\TextBox.cs" />
+    <Compile Include="AVGMode\AVGManager.cs" />
+    <Compile Include="Helper\Maths.cs" />
+    <Compile Include="AVGMode\ScriptManager.cs" />
+    <Compile Include="GameData\GameData.cs" />
+    <Compile Include="GameData\PlanetData.cs" />
+    <Compile Include="Battles\BattleMap.cs" />
+    <Compile Include="Battles\BattleScene.cs" />
+    <Compile Include="Battles\Player\BPlayer.cs" />
+    <Compile Include="Battles\Player\BWingman.cs" />
+    <Compile Include="Contact\BoundBox.cs" />
+    <Compile Include="GameData\EventData.cs" />
+    <Compile Include="Contact\DrawBoundBox.cs" />
+    <Compile Include="GameData\MissionData.cs" />
+    <Compile Include="Contact\Circle.cs" />
+    <Compile Include="Battles\BTracker.cs" />
+    <Compile Include="Battles\Weapon\BWeaponSystem.cs" />
+    <Compile Include="Battles\BWarship.cs" />
+    <Compile Include="Battles\Weapon\BDefenseCannon.cs" />
+    <Compile Include="Battles\Weapon\Base\BBullet.cs" />
+    <Compile Include="Battles\Weapon\Base\BMissile.cs" />
+    <Compile Include="Battles\Weapon\Base\BWeapon.cs" />
+    <Compile Include="GameData\Prestige.cs" />
+    <Compile Include="Battles\Weapon\BDoubleMissile.cs" />
+    <Compile Include="Helper\Countdown.cs" />
+    <Compile Include="Battles\Weapon\Base\BBomb.cs" />
+    <Compile Include="Battles\Weapon\BGeneralBomb.cs" />
+    <Compile Include="GameData\MainData.cs" />
+    <Compile Include="Mission\MissionManager.cs" />
+    <Compile Include="Mission\EventManager.cs" />
+    <Compile Include="Battles\Enemy\BEnemyManager.cs" />
+    <Compile Include="Battles\Enemy\BEnemyship.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sound\" />
+    <Folder Include="GameBace\" />
+    <Folder Include="Action\" />
+    <Folder Include="Object\" />
+    <Folder Include="Helper\" />
+    <Folder Include="Contact\" />
+    <Folder Include="Input\" />
+    <Folder Include="Debug\" />
+    <Folder Include="AVGMode\" />
+    <Folder Include="GameData\" />
+    <Folder Include="Battles\" />
+    <Folder Include="Battles\Weapon\" />
+    <Folder Include="Battles\Weapon\Base\" />
+    <Folder Include="Mission\" />
+  </ItemGroup>
+</Project>
